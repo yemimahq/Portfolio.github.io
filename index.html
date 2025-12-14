@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Yemimah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#hero" onclick="showTab('hero')">Yemimah Ndoyi</a>
+        </div>
+        <nav id="nav-menu">
+            <a href="#hero" class="nav-link active" onclick="showTab('hero')">Home</a>
+            <a href="#about" class="nav-link" onclick="showTab('about')">About Me</a>
+            <a href="#experience" class="nav-link" onclick="showTab('experience')">Work Experience</a>
+            <a href="#education" class="nav-link" onclick="showTab('education')">Education & Certs</a>
+            <a href="#coursework" class="nav-link" onclick="showTab('coursework')">Coursework & Extracurriculars</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+            &#9776;
+        </button>
+    </header>
+
+    <main>
+        <section id="hero" class="content-tab active hero-section">
+            <div class="hero-content">
+                <div class="profile-picture-container">
+                    <img src="profile.png" alt="Profile Picture of Yemimah" class="profile-picture">
+                </div>
+                <h1>Hi, I'm Yemimah!</h1>
+                <p class="tagline"></p>
+                <a href="mailto:yqndoyi@uwm.edu" class="cta-button">Let's Connect</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-tab hidden">
+            <h2>About Me</h2>
+            <p>I’m a data-driven analyst in training with skills in Python, SQL, R, SAS analytics, Tableau, Power BI, and Microsoft Office. I’m pursuing a Master's in Data Science & Applied Artificial Intelligence at the University of Wisconsin–Milwaukee, where I’ve gained hands-on experience in database management, dashboards, data integration, and analysis! I love turning complex data into actionable insights through visualization, data storytelling, and statistical methods. I’m also a graduate of the Northwestern Mutual Data Science Institute (NMDSI) Mentorship Program. In addition, I have experience with electronic health record systems like Epic, Cerner, and Welld, giving me a strong foundation in healthcare data and compliance.</p>
+        </section>
+
+        <section id="experience" class="content-tab hidden">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Student Worker - HR Internal Communication @ Versiti Inc.</h3>
+                <p class="date">March 2025 - Present | Milwaukee, Wi | Remote </p>
+                <ul>
+                    <li>Drafted, edited, and proofread internal communications across email, intranet, SharePoint, and digital signage to ensure clarity and consistent messaging.</li>
+                    <li>Partnered with HR leadership to design and implement communication strategies for employee initiatives and campaigns such as Invest in Hope, monitoring engagement to inform improvements</li>
+                    <li>Created executive-level presentations and provided project support for leadership, aligning messaging with organizational change initiatives.</li>
+                    <li>Simplified complex scientific and medical information into accessible content for nontechnical audiences, strengthening employee connection to Versiti’s mission.</li>
+                    <li>Developed SOPs and streamlined content management for the communication calendar, digital boards, and SharePoint/Teams repositories, improving accessibility andlong-term content retrieval.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Data Anlytics Intern @ Food For Health</h3>
+                <p class="date">Februrary 2025 - August 2025 | Milwaukee, Wi | Remote</p>
+                <ul>
+                    <li>Managed participant onboarding and data entry to ensure smooth platform integration.</li>
+                    <li>Co-developed a JotForm database framework for secure data capture and reporting, improving program tracking and collaboration across teams.</li>
+                    <li>Collected feedback and analyzed program data (B3 Classes, ILOS) in Power BI, generating insights that improved retention, engagement strategies, and marketing visibility.</li>
+                    <li>Built automated dashboards and reporting pipelines that standardized stakeholder reporting, cutting manual reporting time by 75% (from 8 hours to 2 hours weekly).</li>
+                    <li>Supported data integration into the Welld wellness record system while ensuring HIPAA compliance and data integrity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="content-tab hidden">
+            <h2>Education & Certifications</h2>
+
+            <div class="education-item">
+                <h3>MSc. Data Science & Applied Aritifical Intelligence</h3>
+                <p class="date">UW-Milwaukee | January 2025 - Decemeber 2026</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Graduate Certificate in Business Analytics </h3>
+                <p class="date">UW-Milwaukee | January 2025 - December 2026</p>
+            </div>
+
+            <div class="education-item">
+                <h3>BSc. Biomedical Science: Health Sciences</h3>
+                <p class="date">UW-Milwaukee | January 2023 - December 2024</p>
+            </div>
+
+            <div class="education-item">
+                <h3><a href="https://www.credly.com/badges/42aed00a-7975-4db2-9e34-7048b2bed268/linked_in_profile">Excel Associate - Microsoft</a></h3>
+                <p class="date">Completed: Decemeber 2025</p>
+            </div>
+
+        </section>
+
+        <section id="coursework" class="content-tab hidden">
+            <h2>Coursework & Extracurriculars</h2>
+
+            <div class="experience-item">
+                <h3>Database Marketing</h3>
+                <p class="date">UW-Milwaukee | Spring 2025</p>
+                <ul>
+                    <li>Desc....</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Data Science</h3>
+                <p class="date">UW-Milwaukee | Spring 2025</p>
+                <ul>
+                    <li>Analyzed data through statistical methods and visual storytelling while addressing ethics, privacy, and data quality considerations in data-driven decision making.</li>
+                    <li>Built and queried relational databases (MySQL/Access), created metadata schemas (Dublin Core, Schema.org), and applied SQL to extract and analyze structured and unstructured data.</li>
+                    <li>Developed end-to-end data science workflows including dataset selection, data cleaning, database design, statistical analysis, and data visualization using real-world datasets.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Marketing Analytics</h3>
+                <p class="date">UW-Milwaukee | Summer 2025</p>
+                <ul>
+                    <li>Desc....</li>
+                </ul>
+            </div>
+
+
+            <div class="experience-item">
+                <h3>Predictive Analytics for Managers</h3>
+                <p class="date">UW-Milwaukee | Fall 2025</p>
+                <ul>
+                    <li>Desc....</li>
+                </ul>
+            </div>
+
+
+            <div class="experience-item">
+                <h3>Data Analytics in Accounting</h3>
+                <p class="date">UW-Milwaukee | Fall 2025</p>
+                <ul>
+                    <li>Desc....</li>
+                </ul>
+            </div>
+
+
+
+            <div class="list-group">
+                <h3>Extracurriculars:</h3>
+                <ul>
+                    <li>National Society of Black Engineers - Member</li>
+                    <li>Data Science Club UWM - Member</li>
+                    <li>Northwestern Mutual Data Science Institute - Mentee</li>
+                    <li>Ascension Hospital - Volunteer</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yemimah Ndoyi. All rights reserved. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
